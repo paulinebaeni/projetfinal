@@ -53,15 +53,15 @@ return yPadding+(whole*hBuffer);//apply the buffer and return the value
 .classed("black",true);
 
 
-changeColor("dataRace.json")
+changeColor("data/dataRace.json")
 
 $('.onoffswitch-checkbox').change(function() {
     // this will contain a reference to the checkbox   
     if (this.checked) {
-      changeColor("dataRaceTrue.json")
+      changeColor("data/dataRaceTrue.json")
 // the checkbox is now checked 
 } else {
- changeColor("dataRace.json")
+ changeColor("data/dataRace.json")
         // the checkbox is now no longer checked
       }
     });
