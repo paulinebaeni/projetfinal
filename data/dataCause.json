@@ -1,0 +1,22 @@
+[
+  {
+    "sum": 63175,
+    "test": "Suicide"
+  },
+  {
+    "sum": 35176,
+    "test": "Homicide"
+  },
+  {
+    "sum": 1639,
+    "test": "Accidental"
+  },
+  {
+    "sum": 807,
+    "test": "Undetermined"
+  },
+  {
+    "sum": 1,
+    "test": "NA"
+  }
+]

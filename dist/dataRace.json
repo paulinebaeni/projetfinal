@@ -1,0 +1,7 @@
+[
+   { "race":"black","value": 19510,"fakeperc": 55},
+         { "race":"white","value": 9147, "fakeperc": 26},
+     { "race":"hispanic","value": 5634, "fakeperc": 16},
+         { "race":"asian","value": 559, "fakeperc": 2},
+            { "race":"native","value": 326, "fakeperc": 1}
+]

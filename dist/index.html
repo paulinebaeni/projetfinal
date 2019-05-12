@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>GUNS - A two sided story of violence in America</title>
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/grayscale.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+
+  <!-- Header -->
+  <header class="masthead">
+    <div id = "gun" class ="masthead">
+      <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center ">
+          <h1 class="mx-auto my-0 text-uppercase mt-5">GUNS</h1>
+          <h2 class="text-white-50 mx-auto mt-2 mb-5">A two sided story of violence in America</h2>
+          <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section text-center ">
+      <div class="container">
+        <div class="row">
+          <div class="pb-3">
+            <h2 class="text-white mb-5 pb-3 mt-4 " >The decline of gun violence</h2>
+            <div id="firstsect" class="row mt-3" >
+              <div id ="chart2"  class="col-lg-8"></div>
+              <p  class="text-white-50 mt-3 col-lg-4 my-auto">This graph clearly shows a straight decline of gun violence in the previous years. That's obvious and datas don't lie, right?<br>
+               Well they don't but the way we showcase them can be deceiving. Move the slider to reveal another truth. Truncated scales are a often used to portray a different reality. Watch how the axis and scales are revealing a much different story. <br>
+               <input class ="mb-10 mt-5 mb-5" id="slider2" type="range" min="0" max="11300" value="11300" />
+             </p>
+           </div>
+
+           
+           <br >
+           <a id="nextsect1"href="#projects" class="mb-5 mt-5 pt-4 js-scroll-trigger">But what more ?</a>
+         </div>
+
+       </div>
+     </div>
+   </section>
+
+
+   <!-- Projects Section -->
+   <section id="projects-section" class="projects-section text-center ">
+    <div class="container">
+      <div class="">
+        <div class="pb-3">
+          <div id="projects"">
+            <h2 class="text-white mb-2 pt-4" >Gun deaths per race (in %)</h2>
+            <div id="firstsect" >
+              <div id = "graphRace" class="pt-5"></div>
+              <div class='my-legend container'>
+                  <ul class='legend-labels row mr-7'>
+                    <li class="mr-3"><span class="dot" style='background:#2980b9;'></span>Black</li>
+                    <li class="mr-3"><span class="dot" style='background:#ffa600;'></span>White</li>
+                    <li class="mr-3"><span class="dot" style='background:#f953c6;'></span>Hispanic</li>
+                    <li class="mr-3"><span class="dot" style='background:#8E2DE2;'></span>Asian</li>
+                    <li class="mr-3"><span class="dot" style='background:#ff6361;'></span>Native</li>
+                  </ul>
+              </div>
+              <div class="onoffswitch mt-3 ml-5">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+                <label class="onoffswitch-label" for="myonoffswitch">
+                  <span class="onoffswitch-inner"></span>
+                  <span class="onoffswitch-switch"></span>
+                </label>
+              </div>
+              <div class=" featured-text text-center text-lg-left">
+                <p class="text-white-50 mt-5 pb-3"><a class="text-primary">In this graph</a>, it may be easy to see that black and white people are the major victims of gun deaths. But while these numbers are accurate, there are only one of the many ways to tell one's truth. Let's now <a class="text-warning">rethink those numbers</a> and put them in perspective of the race's total population in the United States. Are the results the same?</p>
+                <a href="#thirdsect" class=" js-scroll-trigger">Go to next section</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+
+    </section>
+
+    <!-- Projects Section -->
+    <!-- About Section -->
+    <section id="about" class="pie text-center ">
+      <div class="container">
+        <div class="row">
+          <div class="pb-3 mb-3" id="thirdsect">
+            <h2 class="text-white mb-4 pb-3 " >Different causes of gun deaths</h2>
+            <div class="row" >
+              <div id ="piechart"  class="col-lg-8"></div>
+              <p  class="text-white-50 mt-5 mb-4 pb-4 col-lg-4 my-auto">Pie and donuts charts are commonly known as the worst kind of charts. Why is that? Simply because it's almost impossible for our brains to correctly estimate proportions and numbers on a distorted surface. Try to guess the percentages and then hover on the surfaces to see if you got it right.
+              </p>
+                                                      <div class='my-legend container'>
+                  <ul class='legend-labels row mr-7'>
+                    <li class="mr-3"><span class="dot" style='background:#8DD3C7;'></span>Suicide</li>
+                    <li class="mr-3"><span class="dot" style='background:#58508d;'></span>Homicide</li>
+                    <li class="mr-3"><span class="dot" style='background:#bc5090;'></span>Accident</li>
+                    <li class="mr-3"><span class="dot" style='background:#ff6361;'></span>Undetermined</li>
+                  </ul>
+              </div>
+            </div>
+
+
+
+            <br >
+      <a href="#fourthsec" class="js-scroll-trigger">And finally ?</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="pie text-center">
+      <div class="container">
+        <div class="row">
+          <div class="pb-3">
+            <h2 class="text-white mb-4 pb-2" id="fourthsec" >Number of deaths from guns in 2014</h2>
+            <div  class="row text-center" >
+              <div class="col-lg-3"></div>
+              <div id ="densitychart"  class="col-lg-6 mb-4 ">
+                              <div class="onoffswitch2">
+                <input type="checkbox" name="onoffswitch2" class="onoffswitch2-checkbox" id="myonoffswitch2">
+                <label class="onoffswitch2-label" for="myonoffswitch2">
+                  <span class="onoffswitch2-inner"></span>
+                  <span class="onoffswitch2-switch"></span>
+                </label>
+              </div>
+              </div>
+
+              <p  class="text-white-50 mt-3 my-auto">Double-sided charts are sometimes difficult to read for two reasons. The first one is the double scale which may be counter intuitive. The second one is that, because one part of the graph is lobsided, it can be difficult for the human brain to correctly compare the two.
+                Did you manage to see that there is always 1'000 more women that succomb to gun violence each month?
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+  </section>
+
+  <!-- Contact Section -->
+
+
+  <!-- Footer -->
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      Copyright &copy; Pauline Baeni 2019
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="bundle.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script type="text/javascript"></script>
+  <script src="js/grayscale.min.js"></script>
+
+
+</body>
+
+</html>
