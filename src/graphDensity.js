@@ -13,7 +13,7 @@ var svg = d3.select("#densitychart")
   "translate(" + margin.left + "," + margin.top + ")");
 
 // get the data
-d3.json("dataDensity.json").then(function(data) {
+d3.json("data/dataDensity.json").then(function(data) {
 
   // add the x Axis
   var x = d3.scaleBand()
